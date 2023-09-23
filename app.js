@@ -9,17 +9,13 @@ let btn = document.querySelector("#btn");
 let passw = document.querySelector("#passw");
 let passLabel = document.querySelector("#passLabel");
 
-let additional = "";
 
 check1.addEventListener("change",function(){
     if(this.checked){        
         url = url+"&num=true";
-        additional = additional + "&num=true";
         console.log(url);
     }else{
-            url = url.replace("&num=true","");  
-            additional = additional.replace("&num=true",""); 
-
+        url = url.replace("&num=true","");  
         console.log(url);
     }
 })
@@ -27,12 +23,9 @@ check1.addEventListener("change",function(){
 check2.addEventListener("change",function(){
     if(this.checked){
         url = url+"&caps=true";
-        additional = additional + "&caps=true";
         console.log(url);
     }else{
         url = url.replace("&caps=true","");  
-        additional = additional.replace("&caps=true",""); 
-
         console.log(url);
     }
 })
@@ -40,12 +33,9 @@ check2.addEventListener("change",function(){
 check3.addEventListener("change",function(){
     if(this.checked){
         url = url+"&char=true";
-        additional = additional + "&char=true";
         console.log(url);
     }else{
-            url = url.replace("&char=true","");  
-            additional = additional.replace("&char=true",""); 
-
+        url = url.replace("&char=true","");  
         console.log(url);
     }
 })
